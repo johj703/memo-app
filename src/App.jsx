@@ -16,6 +16,7 @@ function App() {
   };
 
   const initCount = useCallback(() => {
+    console.log(`[COUNT 변경] ${count}에서 0으로 변경되었습니다.`);
     setCount(0);
   }, []);
 
