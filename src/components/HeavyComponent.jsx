@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 const HeavyComponent = () => {
   const [value, setValue] = useState(0);
@@ -8,7 +8,7 @@ const HeavyComponent = () => {
     return 100;
   };
 
-  const sampleValue = heavyWork();
+  const sampleValue = useMemo(() => heavyWork(), []);
 
   return (
     <div>
