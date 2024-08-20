@@ -1,3 +1,5 @@
+import React from "react";
+
 const Box2 = () => {
   console.log("Box2이 렌더링 되었습니다.");
   return (
@@ -18,4 +20,4 @@ const Box2 = () => {
   );
 };
 
-export default Box2;
+export default React.memo(Box2);
