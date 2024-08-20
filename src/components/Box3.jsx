@@ -1,5 +1,21 @@
 const Box3 = () => {
-  return <div>Box3</div>;
+  console.log("Box3이 렌더링 되었습니다.");
+  return (
+    <div
+      style={{
+        width: "100px",
+        height: "100px",
+        backgroundColor: "red",
+        color: "white",
+
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      Box3
+    </div>
+  );
 };
 
 export default Box3;
