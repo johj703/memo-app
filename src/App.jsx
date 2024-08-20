@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+// custom hook을 만들 때 주의사항
+// 1) custom hook의 함수 이름은 use로 시작하는 것이 좋아요(useInput)
+// 2) 파일 이름은 원하는 대로(useInput)
 const App = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
