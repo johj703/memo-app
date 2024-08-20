@@ -7,12 +7,20 @@ function App() {
   const [count, setCount] = useState(0);
   console.log("App 컴포넌트가 렌더링 되었습니다.");
 
+  const onPlusButtonClickHandler = () => {
+    setCount(count + 1);
+  };
+
+  const onMinusButtonClickHandler = () => {
+    setCount(count - 1);
+  };
+
   return (
     <>
       <h3>카운트 예제입니다.</h3>
       <p>현재 카운트 : {count}</p>
-      <button>+</button>
-      <button>-</button>
+      <button onClick={onPlusButtonClickHandler}>+</button>
+      <button onClick={onMinusButtonClickHandler}>-</button>
       <div>
         <Box1 />
         <Box2 />
