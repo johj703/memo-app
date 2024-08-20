@@ -1,4 +1,3 @@
-import { useState } from "react";
 import useInput from "./hooks/useInput";
 
 // custom hook을 만들 때 주의사항
