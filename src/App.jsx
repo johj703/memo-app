@@ -21,7 +21,12 @@ function App() {
       <p>현재 카운트 : {count}</p>
       <button onClick={onPlusButtonClickHandler}>+</button>
       <button onClick={onMinusButtonClickHandler}>-</button>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          marginTop: "10px",
+        }}
+      >
         <Box1 />
         <Box2 />
         <Box3 />
